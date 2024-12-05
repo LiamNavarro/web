@@ -1,95 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Listado de Discos de Jazz</title>
 </head>
 <body>
-    
-    
-    <form action="/search" method="GET">
-        <input type="text" name="query" placeholder="Buscar..." />
+    <nav>
+        <a href="listado.html">Listado de Discos</a> |
+        <a href="ficha.html">Ficha del Disco</a>
+    </nav>
+
+    <p>Migas de pan: <a href="listado.html">Inicio</a> > Listado de Discos</p>
+
+    <form action="#" method="get">
+        <label for="buscador">Buscar disco:</label>
+        <input type="text" id="buscador" name="q" placeholder="Nombre del disco...">
         <button type="submit">Buscar</button>
-      </form>
-      
-    
-    <body>
-        <header>
-          <h1>
-              Mejor disco de Jazz (Mi opinion)
-          </h1>
-          <p><h3>1. Billie Holiday - Lady in Satin (1958)</h3></p>
+    </form>
 
-          <p><em>Lady in Satin</em> (1958) fue el último álbum de <strong>Billie Holiday</strong> en vida. A pesar de las críticas por el deterioro de su voz, hoy se considera su obra maestra y una emotiva despedida antes de su muerte.</p>
+    <h1>Listado de Discos de Jazz</h1>
+    <ul>
+        <li><a href="ficha.html?id=1">Black Radio - Robert Glasper</a></li>
+        <li><a href="ficha.html?id=2">The Epic - Kamasi Washington</a></li>
+        <li><a href="ficha.html?id=3">Liquid Spirit - Gregory Porter</a></li>
+    </ul>
+</body>
+</html>
 
-        <p><strong>Título</strong></p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha del Disco</title>
+</head>
+<body>
+    <nav>
+        <a href="listado.html">Listado de Discos</a> |
+        <a href="ficha.html">Ficha del Disco</a>
+    </nav>
+    <p>Migas de pan: <a href="listado.html">Inicio</a> > <a href="listado.html">Listado de Discos</a> > Ficha del Disco</p>
 
-        <p><strong>Artista</strong></p>
-            
-        <p><strong></strong> </p>
-            
-        <p></p>
-            
-        <p></p>
-            
-        <p></p>
-            
-        <p></p>
-            
-        <p><strong><em><h4>Lista de canciones:</h4></em></strong></p>
-    
+    <h1>Ficha del Disco</h1>
+    <p><strong>Título:</strong> Black Radio</p>
+    <p><strong>Artista:</strong> Robert Glasper</p>
+    <p><strong>Año:</strong> 2012</p>
+    <p><strong>Género:</strong> Jazz contemporáneo</p>
+    <p><strong>Descripción:</strong> Un álbum innovador que combina jazz, hip-hop y R&B, ganador de un Grammy.</p>
 
-
-          <p><h3>2. Louis Armstrong - The Complete Hot Five and Hot Seven Recordings (2000)</h3></p>
-            
-          <p>Louis Armstrong, pionero del jazz, influyó en diversos géneros a lo largo de su carrera. The Complete Hot Five and Hot Seven Recordings (1925-29) recopila sus mejores trabajos, incluyendo el icónico "West End Blues".</p>
-
-          <p><h3>3. John Coltrane - Un amor supremo (1964)</h3></p>
-          
-          <p>A Love Supreme de John Coltrane es una obra maestra del jazz que destaca por su virtuosismo y profundidad. A pesar de las críticas sobre su personalidad, el álbum define su legado como genio musical.</p>
-
-
-
-
-        </header>
-      
-        <section>
-          <h2>
-              Últimos libros
-          </h2>
-          <article>
-            <header>
-              <p>
-                  Historia de dos Ciudades
-              </p>
-            </header>
-            <p>
-              Reflejo del siglo XVIII
-            </p>
-          </article>
-          <article>
-            <header>
-              <p>
-                Cuento de navidad
-              </p>
-            </header>
-            <p>
-              Historia de Nochebuena
-            </p>
-          </article>
-          <aside>
-            <p>
-                Charles Dickens
-            </p>
-          </aside>
-        </section>
-      
-        <footer>
-            Copyright todos los derechos casi reservados
-        </footer>
-      </body>
-      
-
+    <p><a href="listado.html">Volver al listado</a></p>
 </body>
 </html>
