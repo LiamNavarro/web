@@ -1,0 +1,6 @@
+.rectangulo {
+    --lado: 10rem;
+    width: var(--lado);
+    height: calc(2*var(--lado));
+    background-color: #D95B43;
+}
