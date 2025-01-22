@@ -3,13 +3,15 @@
 }
 
 .caja{
+    color: white;
     background: blue;
-}
-
-.caja{
-    opacity: 0.7;
 }
 
 .textito {
     color: purple; 
+}
+
+.farma{
+    color: white;
+    background: green;
 }
