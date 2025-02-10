@@ -1,1 +1,0 @@
-int(input(f"pene o vagina?"))
