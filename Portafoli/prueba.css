@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+header {
+    background-color: #f4a261;
+    color: white;
+    padding: 20px;
+}
+.cursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.curso {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    cursor: pointer;
+}
+.curso:hover {
+    background-color: #f4e1d2;
+}
+.icono {
+    height: 30px;
+    width: 30px;
+    margin: 0 auto 10px;
+}
+.html { background: url('html-icon.png') no-repeat center; }
+.css { background: url('css-icon.png') no-repeat center; }
+.maquetacion { background: url('layout-icon.png') no-repeat center; }
+.js { background: url('js-icon.png') no-repeat center; }
