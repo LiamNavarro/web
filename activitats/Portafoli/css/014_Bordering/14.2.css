@@ -1,0 +1,5 @@
+.borde-segmentado {
+    border: 8px dashed orange; 
+    display: inline-block;    
+    padding: 10px;             
+  }

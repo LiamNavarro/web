@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h1>Buscar Cámaras de Fotos</h1>
+        <form action="/buscar" method="GET">
+            <label for="marca">Marca:</label>
+            <select name="marca" id="marca">
+                <option value="">--Seleccionar--</option>
+                <option value="canon">Canon</option>
+                <option value="nikon">Nikon</option>
+                <option value="sony">Sony</option>
+                <option value="fuji">Fujifilm</option>
+                <option value="olympus">Olympus</option>
+            </select>
+            <br><br>
+
+            <label for="tipo">Tipo de Cámara:</label>
+            <select name="tipo" id="tipo">
+                <option value="">--Seleccionar--</option>
+                <option value="dslr">DSLR</option>
+                <option value="mirrorless">Mirrorless</option>
+                <option value="compacta">Compacta</option>
+                <option value="bridge">Bridge</option>
+                <option value="instantanea">Instantánea</option>
+            </select>
+            <br><br>
+    
+            <label for="precio_min">Precio Mínimo:</label>
+            <input type="number" name="precio_min" id="precio_min" placeholder="0">
+            <br><br>
+            <label for="precio_max">Precio Máximo:</label>
+            <input type="number" name="precio_max" id="precio_max" placeholder="0">
+            <br><br>
+    
+            <label for="resolucion">Resolución Mínima (MP):</label>
+            <input type="number" name="resolucion" id="resolucion" placeholder="12">
+            <br><br>
+    
+            <button type="submit">Buscar</button>
+        </form>
+
+</body>
+</html>
