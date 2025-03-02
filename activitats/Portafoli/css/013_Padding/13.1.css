@@ -1,0 +1,14 @@
+.costo{
+    display: inline;
+}
+
+.bordes{
+    border-radius: 10;
+}
+
+body {
+    background-color: palegoldenrod; 
+    margin: 0; 
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
