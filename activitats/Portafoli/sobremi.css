@@ -55,3 +55,25 @@ body {
 .button:hover {
     background-color: #e08e4f;
 }
+.container {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #f4a261;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+body{
+    background-color: #f4f4f4;
+}
