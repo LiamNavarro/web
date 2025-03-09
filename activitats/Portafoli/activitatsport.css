@@ -123,6 +123,7 @@ header {
     justify-content: center;
     gap: 30px; 
     margin-top: 20px;
+    align-items: flex-start; 
 }
 
 .card {
@@ -133,6 +134,7 @@ header {
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    align-self: flex-start;
 }
 
 
@@ -172,6 +174,7 @@ header {
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    align-self: flex-start;
 }
 
 
