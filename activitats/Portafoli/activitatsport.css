@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5;
     text-align: center;
 }
 header {
@@ -123,7 +124,6 @@ header {
     justify-content: center;
     gap: 30px; 
     margin-top: 20px;
-    align-items: flex-start; 
 }
 
 .card {
@@ -134,7 +134,6 @@ header {
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    align-self: flex-start;
 }
 
 
@@ -174,7 +173,6 @@ header {
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    align-self: flex-start;
 }
 
 
@@ -222,7 +220,15 @@ header {
 .button:hover {
     background-color: #e08e4f;
 }
-.container {
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.container2 {
     flex: 1;
     text-align: center;
     padding: 20px;
@@ -234,46 +240,4 @@ header {
     text-align: center;
     padding: 20px;
     font-size: 16px;
-}
-html, body {
-    height: 100%;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-
-.card {
-    border: 3px solid orange;
-    border-radius: 10px; 
-    padding: 15px 30px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-}
-
-
-.card:hover {
-    background-color: rgba(255, 165, 0, 0.2);
-    transform: scale(1.05);
-}
-.card2 {
-    border: 3px solid orange;
-    border-radius: 10px; 
-    padding: 15px 30px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-}
-
-
-.card2:hover {
-    background-color: rgba(255, 165, 0, 0.2);
-    transform: scale(1.05);
-}
-body{
-    background-color: #f4f4f4;
 }
