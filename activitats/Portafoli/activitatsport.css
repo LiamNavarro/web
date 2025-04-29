@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
     text-align: center;
 }
 header {
@@ -124,6 +123,7 @@ header {
     justify-content: center;
     gap: 30px; 
     margin-top: 20px;
+    align-items: flex-start; 
 }
 
 .card {
@@ -134,6 +134,7 @@ header {
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    align-self: flex-start;
 }
 
 
@@ -173,6 +174,7 @@ header {
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    align-self: flex-start;
 }
 
 
@@ -221,23 +223,4 @@ header {
     background-color: #e08e4f;
 }
 
-html, body {
-    height: 100%;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-
-.container2 {
-    flex: 1;
-    text-align: center;
-    padding: 20px;
-}
-
-.footer {
-    background-color: #f4a261;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 16px;
-}
+  
