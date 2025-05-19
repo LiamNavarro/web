@@ -1,17 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cursos | Programador Web</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function navegar(url) {
+            window.location.href = url;
+        }
+    </script>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Bienvenido a Mi Portafolio</h1>
+            <p>Diseña y programa para la web moderna.</p>
+        </div>
+    </header>
+    <section class="cursos">
+
+        <div class="curso" onclick="navegar('sobremi.html')">
+            <div class="icono maquetacion"></div>
+            <h2>Sobre mi</h2>
     
-<h1>ACTIVITATS</h1>
+        </div>
+        <div class="curso" onclick="navegar('activitatsport.html')">
+            <div class="icono js"></div>
+            <h2>Activitats</h2>
+        </div>
+    </section>
 
-<p><a href="activitats/activitats.html">Activitats HTML</a></p>
+    <div class="container"></div>
+<footer class="footer">
+    <p>© 2025 Mi Portafolio - Todos los derechos reservados.</p>
 
-<p><a href="activitats/activitatsCSS.html">Activitats CSS</a></p>
-
-</body>
-</html>
+</footer>
