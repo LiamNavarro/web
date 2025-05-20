@@ -54,7 +54,10 @@
       operacioSeleccionat = '';
     });
 
-    botoEsborrar.addEventListener('click', () => {
-        
-    }
-
+botoEsborrar.addEventListener('click', () => {
+  if (pantalla.textContent.length > 1) {
+    pantalla.textContent = pantalla.textContent.slice(0, -1);
+  } else {
+    pantalla.textContent = '0';
+  }
+});

@@ -73,3 +73,39 @@ button.operador {
 #netejar:hover {
   background-color: #f00;
 }
+
+header {
+    background-color: #f4a261;
+    color: white;
+    padding: 20px;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    background-color: #f4a261;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    margin: 30px auto;
+    width: 150px;
+    font-size: 18px;
+}
+.button:hover {
+    background-color: #e08e4f;
+}
+
+
+.button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #ffa76d;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    font-family: monospace;
+    cursor: pointer;
+}
