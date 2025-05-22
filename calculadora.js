@@ -1,63 +1,70 @@
-    const pantalla = document.getElementById('pantalla');
-    const botoNumeros = document.querySelectorAll('.numero');
-    const botoOperadors = document.querySelectorAll('.operador');
-    const botoIgual = document.getElementById('igual');
-    const botoNetejar = document.getElementById('netejar');
-    const botoEsborrar = document.getElementById('borrar')
+const pantalla = document.getElementById('pantalla');
+const botoNumeros = document.querySelectorAll('.numero');
+const botoOperadors = document.querySelectorAll('.operador');
+const botoIgual = document.getElementById('igual');
+const botoNetejar = document.getElementById('netejar');
+const botoEsborrar = document.getElementById('borrar');
 
-    let operacioSeleccionat = '';
-    let valorAnterior = '';
+let operacioSeleccionat = '';
+let valorAnterior = '';
 
-    pantalla.textContent = '0';
+pantalla.textContent = '0';
 
-    botoNumeros.forEach(boto => {
-      boto.addEventListener('click', () => {
-        if (pantalla.textContent === '0') {
-          pantalla.textContent = boto.textContent;
-        } else {
-          pantalla.textContent += boto.textContent;
-        }
-      });
-    });
 
-    botoOperadors.forEach(boto => {
-      boto.addEventListener('click', () => {
-        valorAnterior = pantalla.textContent;
-        operacioSeleccionat = boto.textContent;
-        pantalla.textContent = '';
-      });
-    });
+botoNumeros.forEach(boto => {
+  boto.addEventListener('click', () => {
+    pantalla.textContent =
+      pantalla.textContent === '0'
+        ? boto.textContent
+        : pantalla.textContent + boto.textContent;
+  });
+});
 
-    botoIgual.addEventListener('click', () => {
-      const valorActual = pantalla.textContent;
-      let resultat = 0;
 
-      const numAnterior = parseFloat(valorAnterior);
-      const numActual = parseFloat(valorActual);
+botoOperadors.forEach(boto => {
+  boto.addEventListener('click', () => {
+    valorAnterior = pantalla.textContent;
+    operacioSeleccionat = boto.textContent;
+    pantalla.textContent = '';
+  });
+});
 
-      if (operacioSeleccionat === '+') {
-        resultat = numAnterior + numActual;
-      } else if (operacioSeleccionat === '-') {
-        resultat = numAnterior - numActual;
-      } else if (operacioSeleccionat === '*') {
-        resultat = numAnterior * numActual;
-      } else if (operacioSeleccionat === '/') {
-        resultat = numActual !== 0 ? numAnterior / numActual : 'Error';
-      }
 
-      pantalla.textContent = resultat;
-    });
+botoIgual.addEventListener('click', () => {
+  const valorActual = pantalla.textContent;
+  const numAnterior = parseFloat(valorAnterior);
+  const numActual = parseFloat(valorActual);
+  let resultat = 0;
 
-    botoNetejar.addEventListener('click', () => {
-      pantalla.textContent = '0';
-      valorAnterior = '';
-      operacioSeleccionat = '';
-    });
+  switch (operacioSeleccionat) {
+    case '+':
+      resultat = numAnterior + numActual;
+      break;
+    case '-':
+      resultat = numAnterior - numActual;
+      break;
+    case '*':
+      resultat = numAnterior * numActual;
+      break;
+    case '/':
+      resultat = numActual !== 0 ? numAnterior / numActual : 'Error';
+      break;
+    default:
+      resultat = 'Error';
+  }
+
+  pantalla.textContent = resultat;
+});
+
+botoNetejar.addEventListener('click', () => {
+  pantalla.textContent = '0';
+  valorAnterior = '';
+  operacioSeleccionat = '';
+});
 
 botoEsborrar.addEventListener('click', () => {
-  if (pantalla.textContent.length > 1) {
-    pantalla.textContent = pantalla.textContent.slice(0, -1);
-  } else {
-    pantalla.textContent = '0';
-  }
+  pantalla.textContent =
+    pantalla.textContent.length > 1
+      ? pantalla.textContent.slice(0, -1)
+      : '0';
 });
