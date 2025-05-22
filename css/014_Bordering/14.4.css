@@ -1,0 +1,7 @@
+.borde-monstruo {
+    border: 8px solid orange; 
+    display: inline-block;     
+    padding: 5px;             
+    border-radius: 4rem;
+    border-image: linear-gradient(red, blue) 1;
+    }
